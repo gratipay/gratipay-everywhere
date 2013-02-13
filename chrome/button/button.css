@@ -1,3 +1,11 @@
+/* GitHub */
 span.mini-icon-gittip {
-	background-image: url(https://f.cloud.github.com/assets/134455/56882/f0a7ed90-5b31-11e2-988c-5e47b2ebe27a.png);
+	background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gittip16.png');
+	margin-top: 3px;
 }
+
+/* BitBucket */
+#repo-header .icon.gittip {
+	background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gittip16.png');
+}
+
