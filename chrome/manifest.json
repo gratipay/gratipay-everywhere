@@ -1,6 +1,6 @@
 {
     "name": "Gittip Everywhere",
-    "version": "0.5",
+    "version": "0.6",
     "manifest_version": 2,
     "description": "The official Gittip addon for your (currently chrome) browser, we enable Gittip tipping icons on many of your favorite sites.",
     "update_url": "http://clients2.google.com/service/update2/crx",
@@ -19,16 +19,16 @@
     "content_scripts": [ 
         {
             "css": [ "button/button.css" ],
-            "js": [ "libs/jquery-1.8.3.min.js", "websites/github/github.js" ],
+            "js": [ "libs/jquery-2.0.2.min.js", "websites/github/github.js" ],
             "matches": [ "https://github.com/*" ]
         },
         {
-            "js": [ "libs/jquery-1.8.3.min.js", "websites/twitter/twitter.js" ],
+            "js": [ "libs/jquery-2.0.2.min.js", "websites/twitter/twitter.js" ],
             "matches": [ "https://twitter.com/*" ]
         },
         {
             "css": [ "button/button.css" ],
-            "js": [ "libs/jquery-1.8.3.min.js", "websites/bitbucket/bitbucket.js" ],
+            "js": [ "libs/jquery-2.0.2.min.js", "websites/bitbucket/bitbucket.js" ],
             "matches": [ "https://bitbucket.org/*" ]
         }
     ],

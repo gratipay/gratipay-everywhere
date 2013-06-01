@@ -1,11 +1,23 @@
 /* GitHub */
+#gittip-button a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    padding: 0 10px;
+}
+
 span.mini-icon-gittip {
-	background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gittip16.png');
-	margin-top: 3px;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gittip16.png');
+
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+
+    vertical-align: text-top;
 }
 
 /* BitBucket */
 #repo-header .icon.gittip {
-	background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gittip16.png');
+    background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gittip16.png');
 }
 

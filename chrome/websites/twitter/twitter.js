@@ -46,10 +46,12 @@
                     // If we're here, this means Gittip broke, so we should try and load the "on/twitter"
 
                     // Since Gittip doesn't have an API on it atm, we'll just hide the box.
+                    // https://github.com/gittip/Gittip-Everywhere/issues/8
                     $('#gittip').hide();
 
                 }
             });
+
         });
 
     }

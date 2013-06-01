@@ -1,6 +1,4 @@
 (function() {
-    'use strict';
-
     // Misc function for returning the HTML of a Javascript Element
     function outerHTML(node){
         return node.outerHTML || new XMLSerializer().serializeToString(node);
@@ -17,9 +15,9 @@
         // Add attributes to required containers/elements
         buttonContainer.id = 'gittip-button';
 
-        button.className += 'minibutton js-toggler-target starred';
+        button.className += 'button minibutton js-toggler-target starred';
         button.rel = 'nofollow payment';
-        button.target = 'blank';
+        button.target = '_blank';
         button.href = 'https://www.gittip.com/on/github/'+author;
         button.innerHTML = '<span class="mini-icon mini-icon-gittip"></span> Gittip';
 
