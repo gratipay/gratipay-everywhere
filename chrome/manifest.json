@@ -1,6 +1,6 @@
 {
     "name": "Gittip Everywhere",
-    "version": "0.6",
+    "version": "0.8",
     "manifest_version": 2,
     "description": "The official Gittip addon for your (currently chrome) browser, we enable Gittip tipping icons on many of your favorite sites.",
     "update_url": "http://clients2.google.com/service/update2/crx",
@@ -14,8 +14,14 @@
         "default_icon": "icons/gittip48.png"
     },
     "permissions": [
-        "https://github.com/*"
+        "https://github.com/*",
+        "tabs", 
+        "webNavigation"
     ],
+    "background": {
+        "page": "background.html",
+        "persistent": false
+    },
     "content_scripts": [ 
         {
             "css": [ "button/button.css" ],

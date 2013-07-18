@@ -4,8 +4,10 @@
     function generateTwitter() {
         var gittip;
 
-        var username = $('span.screen-name').text().replace('@','');
-        var fullname = $('h1.fullname').text().replace('@','');
+        var username = $('link[rel="canonical"]').attr('href').replace('https://twitter.com/','');
+        var fullname = $('title').text().replace(' ('+username+') on Twitter','');
+
+        console.log(username);
 
 
         //var html = load(chrome.extension.getURL('websites/twitter/widget.html'));
