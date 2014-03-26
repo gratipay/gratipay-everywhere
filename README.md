@@ -9,5 +9,3 @@ This project was inspired by https://github.com/ironchefpython/gittip-browser-ex
 
 - Gittip Button for Github.
   [code.](https://github.com/nathancahill/gittip-button)
-  [chrome.](https://chrome.google.com/webstore/detail/gittip/lgmkdccobiepammpajfoomochedhoiah/)
-  [firefox.](https://addons.mozilla.org/en-US/firefox/addon/gittip/)
