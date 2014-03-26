@@ -7,5 +7,4 @@ This project was inspired by https://github.com/ironchefpython/gittip-browser-ex
 
 ## Similar Projects
 
-- Gittip Button for Github.
-  [code.](https://github.com/nathancahill/gittip-button)
+- [Gittip Button for Github](https://github.com/nathancahill/gittip-button)
