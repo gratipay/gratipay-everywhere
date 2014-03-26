@@ -24,12 +24,16 @@
 
             $.ajax({
                 type: 'GET',
-                url: 'https://www.gittip.com/'+username+'/public.json',
+                url: 'https://www.gittip.com/on/twitter/'+username+'/public.json',
                 beforeSend:function(){
                     // this is where we append a loading image
                     
                 },
                 success:function(data){
+                    // stop here if they aren't on Gittip
+                    if (data.on != 'gittip')
+                        return this.error(data);
+
                     // successful request; do something with the data
                     gittip = data;
 
@@ -45,10 +49,8 @@
                 },
                 error: function(data){
                     console.log(data);
-                    // If we're here, this means Gittip broke, so we should try and load the "on/twitter"
-
-                    // Since Gittip doesn't have an API on it atm, we'll just hide the box.
-                    // https://github.com/gittip/Gittip-Everywhere/issues/8
+                    // for now just hide it all, but we should check to see if they exist, and
+                    // are just not on Gittip, or if we're getting a 404
                     $('#gittip').hide();
 
                 }
