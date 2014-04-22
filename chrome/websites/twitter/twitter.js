@@ -44,6 +44,16 @@
                     widget = widget.replace('{{USERNAME}}', username);
 
                     $('#gittip').html(widget);
+
+                    if (gittip.giving && gittip.receiving)
+                        $('#gittip .giving-receiving').show();
+                    else if (gittip.giving)
+                        $('#gittip .giving').show();
+                    else if (gittip.receiving)
+                        $('#gittip .receiving').show();
+                    else
+                        $('#gittip .neither').show();
+
                     $('.loading').hide();
                     $('.loaded').show();
                 },
