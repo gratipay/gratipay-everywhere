@@ -6,6 +6,15 @@
   "version": "1.0.0",
   "platform_version": "v1.4",
   "description": "The official Gittip addon for your browser, we enable Gittip tipping icons on many of your favorite sites.",
+  "requirements": {
+    "chrome": {
+      "web_accessible_resources": [
+        "src/bower_components/jquery/dist/jquery.min.map",
+        "src/icons/gittip16.png",
+        "src/websites/twitter/widget.html"
+      ]
+    }
+  },
   "modules": {
     "logging": {
       "level": "DEBUG"
