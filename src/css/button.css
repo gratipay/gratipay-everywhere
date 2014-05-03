@@ -3,7 +3,7 @@
 }
 
 /* BitBucket */
-#repo-header .icon.gittip {
+.aui-iconfont-gittip {
     background-image: url('chrome-extension://__MSG_@@extension_id__/src/icons/gittip16.png');
 }
 
