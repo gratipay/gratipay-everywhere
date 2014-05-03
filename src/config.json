@@ -1,15 +1,15 @@
 {
-	"config_version": "2",
-	"name": "Gittip Everywhere",
-	"author": "patcon",
+  "config_version": "2",
+  "name": "Gittip Everywhere",
+  "author": "patcon",
   "homepage": "https://github.com/gittip/Gittip-Everywhere",
-	"version": "1.0.0",
-	"platform_version": "v1.4",
-	"description": "The official Gittip addon for your browser, we enable Gittip tipping icons on many of your favorite sites.",
-	"modules": {
-		"logging": {
-			"level": "DEBUG"
-		},
+  "version": "1.0.0",
+  "platform_version": "v1.4",
+  "description": "The official Gittip addon for your browser, we enable Gittip tipping icons on many of your favorite sites.",
+  "modules": {
+    "logging": {
+      "level": "DEBUG"
+    },
     "background": {
       "files": [
         "js/background.js"
@@ -48,19 +48,19 @@
       "chrome": "http://clients2.google.com/service/update2/crx"
     },
     "tabs": true,
-		"contact": true,
-		"file": true,
-		"is": true,
-		"media": true,
-		"prefs": true,
-		"request": {
-			"permissions": [
+    "contact": true,
+    "file": true,
+    "is": true,
+    "media": true,
+    "prefs": true,
+    "request": {
+      "permissions": [
         "https://github.com/*",
         "tabs",
         "webNavigation"
       ]
-		},
-		"tools": true,
-		"reload": true
-	}
+    },
+    "tools": true,
+    "reload": true
+  }
 }
