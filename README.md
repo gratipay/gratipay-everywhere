@@ -1,8 +1,13 @@
 Gittip-Everywhere
 =================
 
-The official Gittip extension for the Chrome browser. We enable Gittip
-giving icons on many of your favorite sites.
+The official Gittip browser extension. We enable Gittip giving icons on
+many of your favorite sites.
+
+Supported browsers:
+
+* Chrome
+* Firefox
 
 This project was inspired by
 https://github.com/ironchefpython/gittip-browser-extension

@@ -34,7 +34,11 @@
       }
     ],
     "button": {
-      "default_icon": "icons/gittip48.png"
+      "default_title": "Gittip Everywhere",
+      "default_icon": "icons/gittip48.png",
+      "default_icons": {
+        "firefox": "icons/gittip16.png"
+      }
     },
     "icons": {
       "chrome": {
@@ -42,6 +46,10 @@
         "48": "icons/gittip48.png",
         "128": "icons/gittip128.png",
         "256": "icons/gittip256.png"
+      },
+      "firefox": {
+        "32": "icons/gittip32.png",
+        "64": "icons/gittip64.png"
       }
     },
     "update_url": {
