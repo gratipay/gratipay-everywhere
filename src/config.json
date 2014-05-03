@@ -68,8 +68,6 @@
     "is": true,
     "request": {
       "permissions": [
-        "https://github.com/*",
-        "tabs",
         "webNavigation"
       ]
     },
