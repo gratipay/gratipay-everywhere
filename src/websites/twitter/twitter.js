@@ -7,10 +7,7 @@
         var username = $('link[rel="canonical"]').attr('href').replace('https://twitter.com/','');
         var fullname = $('title').text().replace(' ('+username+') on Twitter','');
 
-        console.log(username);
-
-
-        //var html = load(chrome.extension.getURL('websites/twitter/widget.html'));
+        //var html = load(forge.tools.getURL('src/websites/twitter/widget.html'));
 
         // Setup the box areas
         var $profileBox = $('.profile-nav').parent();
@@ -20,7 +17,8 @@
         $profileBox.append($gittipBox);
 
         // Let's "create" our new box.
-        $('#gittip').load(forge.tools.getURL('websites/twitter/widget.html'), function(widget) {
+        // forge.tools.getURL is not working here for some reason... TODO
+        $('#gittip').load(chrome.extension.getURL('src/websites/twitter/widget.html'), function(widget) {
 
             $.ajax({
                 type: 'GET',
