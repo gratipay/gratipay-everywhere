@@ -1,0 +1,66 @@
+{
+	"config_version": "2",
+	"name": "Gittip Everywhere",
+	"author": "patcon",
+  "homepage": "https://github.com/gittip/Gittip-Everywhere",
+	"version": "1.0.0",
+	"platform_version": "v1.4",
+	"description": "The official Gittip addon for your browser, we enable Gittip tipping icons on many of your favorite sites.",
+	"modules": {
+		"logging": {
+			"level": "DEBUG"
+		},
+    "background": {
+      "files": [
+        "js/background.js"
+      ]
+    },
+    "activations": [
+      {
+        "styles": ["css/button.css"],
+        "scripts": ["bower_components/jquery/dist/jquery.min.js", "websites/github/github.js"],
+        "patterns": ["https://github.com/*"]
+      },
+      {
+
+        "styles": [],
+        "scripts": ["bower_components/jquery/dist/jquery.min.js", "websites/twitter/twitter.js"],
+        "patterns": ["https://twitter.com/*"]
+      },
+      {
+        "styles": ["css/button.css"],
+        "scripts": ["bower_components/jquery/dist/jquery.min.js", "websites/bitbucket/bitbucket.js"],
+        "patterns": ["https://bitbucket.org/*"]
+      }
+    ],
+    "button": {
+      "default_icon": "icons/gittip48.png"
+    },
+    "icons": {
+      "chrome": {
+        "16": "icons/gittip16.png",
+        "48": "icons/gittip48.png",
+        "128": "icons/gittip128.png",
+        "256": "icons/gittip256.png"
+      }
+    },
+    "update_url": {
+      "chrome": "http://clients2.google.com/service/update2/crx"
+    },
+    "tabs": true,
+		"contact": true,
+		"file": true,
+		"is": true,
+		"media": true,
+		"prefs": true,
+		"request": {
+			"permissions": [
+        "https://github.com/*",
+        "tabs",
+        "webNavigation"
+      ]
+		},
+		"tools": true,
+		"reload": true
+	}
+}

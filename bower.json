@@ -1,0 +1,12 @@
+{
+  "name": "gittip-everywhere",
+  "version": "0.0.0",
+  "authors": [
+    "Patrick Connolly <patrick.c.connolly@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "2.1.1"
+  }
+}

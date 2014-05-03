@@ -13,16 +13,15 @@
         var button = document.createElement('a');
 
         // Add attributes to required containers/elements
-        buttonContainer.id = 'gittip-button';
-
-        button.className += 'button minibutton js-toggler-target starred';
+        button.href = 'https://www.gittip.com/on/github/'+author;
+        button.className += 'minibutton gittip-button';
         button.rel = 'nofollow payment';
         button.target = '_blank';
-        button.href = 'https://www.gittip.com/on/github/'+author;
-        button.innerHTML = '<span class="mini-icon mini-icon-gittip"></span> Gittip';
+        button.innerHTML = '<span class="octicon octicon-heart"></span>';
+        button.innerHTML += 'Gittip';
 
         // Fill the data
-        buttonContainer.innerHTML = outerHTML(button); 
+        buttonContainer.innerHTML = outerHTML(button);
 
         // Insert our button!
         actions.insertBefore(buttonContainer, actions.firstChild);

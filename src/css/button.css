@@ -1,0 +1,9 @@
+/* GitHub */
+.gittip-button {
+}
+
+/* BitBucket */
+#repo-header .icon.gittip {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/src/icons/gittip16.png');
+}
+
