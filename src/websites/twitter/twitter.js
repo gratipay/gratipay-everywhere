@@ -20,14 +20,13 @@
         $profileBox.append($gittipBox);
 
         // Let's "create" our new box.
-        $('#gittip').load(chrome.extension.getURL('websites/twitter/widget.html'), function(widget) {
+        $('#gittip').load(forge.tools.getURL('websites/twitter/widget.html'), function(widget) {
 
             $.ajax({
                 type: 'GET',
                 url: 'https://www.gittip.com/on/twitter/'+username+'/public.json',
                 beforeSend:function(){
                     // this is where we append a loading image
-                    
                 },
                 success:function(data){
                     // stop here if they aren't on Gittip
