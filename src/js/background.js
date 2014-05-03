@@ -6,18 +6,23 @@
     }
 
     function goToGittip() {
-        chrome.tabs.getAllInWindow(undefined, function(tabs) {
-            for (var i = 0, tab; tab = tabs[i]; i++) {
-                if (tab.url && isGittipUrl(tab.url)) {
-                    chrome.tabs.update(tab.id, {selected: true});
-                    return;
+        // Be smart about only opening one Gittip tab on Chrome
+        if (forge.is.chrome()) {
+            chrome.tabs.getAllInWindow(undefined, function(tabs) {
+                for (var i = 0, tab; tab = tabs[i]; i++) {
+                    if (tab.url && isGittipUrl(tab.url)) {
+                        chrome.tabs.update(tab.id, {selected: true});
+                        return;
+                    }
                 }
-            }
-            chrome.tabs.create({url: gittipUrl});
-        });
+                forge.tabs.open(gittipUrl);
+            });
+        } else {
+            forge.tabs.open(gittipUrl);
+        }
     }
 
     // Add listener
-    chrome.browserAction.onClicked.addListener(goToGittip);
+    forge.button.onClicked.addListener(goToGittip);
 
 }());
