@@ -10,7 +10,6 @@
     "chrome": {
       "web_accessible_resources": [
         "src/bower_components/jquery/dist/jquery.min.map",
-        "src/icons/gittip16.png",
         "src/websites/twitter/widget.html"
       ]
     }
