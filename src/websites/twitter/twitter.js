@@ -1,6 +1,4 @@
 (function() {
-    var location = window.location;
-
     function generateTwitter() {
         var gittip;
 
@@ -14,55 +12,90 @@
 
         $profileBox.append($gittipBox);
 
-        // Let's "create" our new box.
-        forge.tools.getURL('websites/twitter/widget.html', function(uri) {
-            console.log(uri);
-            $('#gittip').load(uri, function(widget) {
-                $.ajax({
-                    type: 'GET',
-                    url: 'https://www.gittip.com/on/twitter/'+username+'/public.json',
-                    beforeSend:function(){
-                        // this is where we append a loading image
-                    },
-                    success:function(data){
-                        // stop here if they aren't on Gittip
-                        if (data.on != 'gittip')
-                            return this.error(data);
+        // Firefox can't deal with external template files
+        var template = [];
+        template.push('<div class="module component" data-component-term="profile_gittip">');
+        template.push('    <div class="profile-gittip-box flex-module">');
+        template.push('        <div class="loading">');
+        template.push('            <h2>Loading...</h2>');
+        template.push('        </div>');
+        template.push('        <div class="loaded">');
+        template.push('            <div class="gittip-box-title">');
+        template.push('                <h2>{{FULLNAME}} On Gittip!</h2>');
+        template.push('            </div>');
+        template.push('            <br>');
+        template.push('            <div class="giving-receiving">');
+        template.push('                <h2 class="pad-sign"><a href="https://www.gittip.com/on/twitter/{{USERNAME}}">{{USERNAME}}</a> receives</h2>');
+        template.push('                <div class="number">${{RECEIVE}}</div>');
+        template.push('                <div class="unit pad-sign">per week, and gives $<span class="total-giving">{{GIVING}}</span></div>');
+        template.push('            </div>');
+        template.push('        </div>');
+        template.push('    </div>');
+        template.push('</div>');
+        template.push('<style type="text/css">');
+        template.push('.loading {');
+        template.push('    text-align: center;');
+        template.push('}');
+        template.push('.loading h2 {');
+        template.push('    font: bold 36px "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;');
+        template.push('}');
+        template.push('.loaded {');
+        template.push('    display: none;');
+        template.push('    text-align: center;');
+        template.push('}');
+        template.push('.pad-sign {');
+        template.push('    font: bold 14px "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;');
+        template.push('    text-transform: uppercase;');
+        template.push('    color: #614c3e;');
+        template.push('}');
+        template.push('.number {');
+        template.push('    font: bold 36px "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;');
+        template.push('}');
+        template.push('.unit {');
+        template.push('    font: normal 12px "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;');
+        template.push('}');
+        template.push('.total-giving {');
+        template.push('    font-weight: bold;');
+        template.push('}');
+        template.push('</style>');
 
-                        // successful request; do something with the data
-                        gittip = data;
+        var widget = template.join("\n");
 
-                        widget = widget.replace('{{RECEIVE}}', gittip.receiving);
-                        widget = widget.replace('{{GIVING}}', gittip.giving);
-                        widget = widget.replace('{{FULLNAME}}', fullname);
-                        widget = widget.replace('{{USERNAME}}', username);
-                        widget = widget.replace('{{USERNAME}}', username);
+        $("#gittip").html(widget);
+        $.ajax({
+            type: 'GET',
+            url: 'https://www.gittip.com/on/twitter/'+username+'/public.json',
+            beforeSend:function(){
+                // this is where we append a loading image
+            },
+            success:function(data){
+                // stop here if they aren't on Gittip
+                if (data.on != 'gittip')
+                    return this.error(data);
 
-                        $('#gittip').html(widget);
-                        $('.loading').hide();
-                        $('.loaded').show();
-                    },
-                    error: function(data){
-                        console.log(data);
-                        // for now just hide it all, but we should check to see if they exist, and
-                        // are just not on Gittip, or if we're getting a 404
-                        $('#gittip').hide();
+                // successful request; do something with the data
+                gittip = data;
 
-                    }
-                });
-            });
+                widget = widget.replace('{{RECEIVE}}', gittip.receiving);
+                widget = widget.replace('{{GIVING}}', gittip.giving);
+                widget = widget.replace('{{FULLNAME}}', fullname);
+                widget = widget.replace('{{USERNAME}}', username);
+                widget = widget.replace('{{USERNAME}}', username);
+
+                $('#gittip').html(widget);
+                $('.loading').hide();
+                $('.loaded').show();
+            },
+            error: function(data){
+                console.log(data);
+                // for now just hide it all, but we should check to see if they exist, and
+                // are just not on Gittip, or if we're getting a 404
+                $('#gittip').hide();
+
+            }
         });
-
     }
 
     generateTwitter();
 
-    /*
-    window.setTimeout(function() {
-        var cLocation = window.location;
-        if(location.pathname != cLocation.pathname) {
-            generateTwitter();
-        }
-    }, 1000);
-*/
 }());
