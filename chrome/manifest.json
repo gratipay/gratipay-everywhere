@@ -38,7 +38,6 @@
         }
     ],
     "web_accessible_resources": [
-        "icons/gittip16.png",
         "websites/twitter/widget.html"
     ]
 }
