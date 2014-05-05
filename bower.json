@@ -1,0 +1,7 @@
+{
+  "name": "gittip-everywhere",
+  "private": true,
+  "dependencies": {
+    "jquery": "2.1.1"
+  }
+}

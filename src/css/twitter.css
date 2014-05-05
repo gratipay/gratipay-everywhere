@@ -1,0 +1,25 @@
+.loading {
+    text-align: center;
+}
+.loading h2 {
+    font: bold 36px "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;
+}
+.loaded {
+    display: none;
+    text-align: center;
+}
+.pad-sign {
+    font: bold 14px "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;
+    text-transform: uppercase;
+    color: #614c3e;
+}
+.number {
+    font: bold 36px "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;
+}
+.unit {
+    font: normal 12px "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;
+}
+.total-giving {
+    font-weight: bold;
+}
+

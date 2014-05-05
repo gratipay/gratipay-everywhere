@@ -1,0 +1,76 @@
+{
+  "config_version": "2",
+  "name": "Gittip Everywhere",
+  "author": "Team Gittip",
+  "homepage": "https://github.com/gittip/Gittip-Everywhere",
+  "version": "1.0.0",
+  "platform_version": "v1.4",
+  "description": "The official Gittip addon for your browser, we enable Gittip tipping icons on many of your favorite sites.",
+  "requirements": {
+    "chrome": {
+      "web_accessible_resources": [
+        "src/bower_components/jquery/dist/jquery.min.map",
+        "src/websites/twitter/widget.html"
+      ]
+    }
+  },
+  "modules": {
+    "logging": {
+      "level": "DEBUG"
+    },
+    "background": {
+      "files": [
+        "js/background.js"
+      ]
+    },
+    "activations": [
+      {
+        "styles": ["css/button.css"],
+        "scripts": ["bower_components/jquery/dist/jquery.min.js", "websites/github/github.js"],
+        "patterns": ["https://github.com/*"]
+      },
+      {
+
+        "styles": ["css/twitter.css"],
+        "scripts": ["bower_components/jquery/dist/jquery.min.js", "websites/twitter/twitter.js"],
+        "patterns": ["https://twitter.com/*"]
+      },
+      {
+        "styles": ["css/button.css"],
+        "scripts": ["bower_components/jquery/dist/jquery.min.js", "websites/bitbucket/bitbucket.js"],
+        "patterns": ["https://bitbucket.org/*"]
+      }
+    ],
+    "button": {
+      "default_title": "Gittip Everywhere",
+      "default_icon": "icons/gittip48.png",
+      "default_icons": {
+        "firefox": "icons/gittip16.png"
+      }
+    },
+    "icons": {
+      "chrome": {
+        "16": "icons/gittip16.png",
+        "48": "icons/gittip48.png",
+        "128": "icons/gittip128.png",
+        "256": "icons/gittip256.png"
+      },
+      "firefox": {
+        "32": "icons/gittip32.png",
+        "64": "icons/gittip64.png"
+      }
+    },
+    "update_url": {
+      "chrome": "http://clients2.google.com/service/update2/crx"
+    },
+    "tabs": true,
+    "is": true,
+    "request": {
+      "permissions": [
+        "webNavigation"
+      ]
+    },
+    "tools": true,
+    "reload": true
+  }
+}

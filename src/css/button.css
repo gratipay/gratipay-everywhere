@@ -1,0 +1,11 @@
+/* GitHub */
+.gittip-button {
+}
+
+/* BitBucket */
+.aui-iconfont-gittip {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAABZklEQVQ4y52TvUoDQRSFv/15DwUXMRAxsbARUsTGIg9gabQSgr9BMSgoSgpNYaGlro1FVFBwLQKSYh9AEhU0YDCooIKISDTaZG0my2aTyOKpZs7cc++dO2ckXIhGQh1AHAgD7YIuAVkgpRtm0RkvucQ7QJS/oeuGOdKQIBoJ5YAevCGnG2YQQHZU9ioGCAgNkrjzrfNU8/l5uCvy810BQFEUNJ+fwlXenUhTxcBsjE7O0z8wCMBmcpHKV5mppXVUVeXmMsdaYsIZHlfFtG34e/vsdSyxUleuqzvg7iAsO54KgNODvZYXzxzvu6l22c2cnRxyfXHeIH56vCe9vdXAy8IkdUgtTNsDrGE1PtasqZIsHFYHy7JIzsbs/cbyHJXPcrMEWSXY2VYAxt0nH+9vVKtVXl+eyRylW41lSBJG0oHhZhGSJFmWZUmtLP1fK+d1wwzYVgYQxK4HsV4TN/xG0YkGzHj9zr+38HZAb/gPKAAAAABJRU5ErkJggg==);
+    -webkit-filter: grayscale(100%);
+    opacity: .8;
+}
+
