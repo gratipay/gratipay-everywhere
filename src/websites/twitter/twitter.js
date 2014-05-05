@@ -32,32 +32,6 @@
         template.push('        </div>');
         template.push('    </div>');
         template.push('</div>');
-        template.push('<style type="text/css">');
-        template.push('.loading {');
-        template.push('    text-align: center;');
-        template.push('}');
-        template.push('.loading h2 {');
-        template.push('    font: bold 36px "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;');
-        template.push('}');
-        template.push('.loaded {');
-        template.push('    display: none;');
-        template.push('    text-align: center;');
-        template.push('}');
-        template.push('.pad-sign {');
-        template.push('    font: bold 14px "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;');
-        template.push('    text-transform: uppercase;');
-        template.push('    color: #614c3e;');
-        template.push('}');
-        template.push('.number {');
-        template.push('    font: bold 36px "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;');
-        template.push('}');
-        template.push('.unit {');
-        template.push('    font: normal 12px "Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;');
-        template.push('}');
-        template.push('.total-giving {');
-        template.push('    font-weight: bold;');
-        template.push('}');
-        template.push('</style>');
 
         var widget = template.join("\n");
 
