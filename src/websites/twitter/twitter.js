@@ -1,4 +1,4 @@
-(function() {
+var twitter = function() {
     function generateTwitter() {
         var gittip;
 
@@ -36,6 +36,7 @@
         var widget = template.join("\n");
 
         $("#gittip").html(widget);
+
         $.ajax({
             type: 'GET',
             url: 'https://www.gittip.com/on/twitter/'+username+'/public.json',
@@ -72,4 +73,7 @@
 
     generateTwitter();
 
-}());
+};
+
+$(document).ready(twitter);
+
