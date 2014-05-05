@@ -24,6 +24,7 @@
     },
     "content_scripts": [ 
         {
+            "css": [ "button/button.css" ],
             "js": [ "libs/jquery-2.0.2.min.js", "websites/github/github.js" ],
             "matches": [ "https://github.com/*" ]
         },
@@ -32,12 +33,13 @@
             "matches": [ "https://twitter.com/*" ]
         },
         {
-            "css": [ "css/bitbucket.css" ],
+            "css": [ "button/button.css" ],
             "js": [ "libs/jquery-2.0.2.min.js", "websites/bitbucket/bitbucket.js" ],
             "matches": [ "https://bitbucket.org/*" ]
         }
     ],
     "web_accessible_resources": [
+        "icons/gittip16.png",
         "websites/twitter/widget.html"
     ]
 }

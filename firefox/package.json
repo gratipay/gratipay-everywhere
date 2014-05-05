@@ -1,0 +1,19 @@
+{
+   "license":"BSD 3-Clause",
+   "description":"The official Gittip addon for your browser, we enable Gittip tipping icons on many of your favorite sites.",
+   "contributors":[
+
+   ],
+   "author":"clone1018",
+   "url":"",
+   "dependencies":[
+      "api-utils",
+      "addon-kit"
+   ],
+   "version":"initial.rev3",
+   "lib":"lib",
+   "fullName":"Gittip Everywhere",
+   "main":"main",
+   "id":"jid0-AKiuZrZQyWxgeVB96AfNAIKcgmI",
+   "name":"gittip-everywhere"
+}
