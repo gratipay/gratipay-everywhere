@@ -1,0 +1,6 @@
+/* BitBucket */
+#repo-header .icon.gittip {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gittip16.png');
+    -webkit-filter: grayscale(100%);
+    opacity: .8;
+}
