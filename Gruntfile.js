@@ -9,5 +9,5 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-image-embed');
-  grunt.registerTask("default", ["imageEmbed"]);
+  grunt.registerTask("build", ["imageEmbed"]);
 }
