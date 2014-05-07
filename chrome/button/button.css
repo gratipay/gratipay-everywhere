@@ -2,7 +2,6 @@
 .octicon-gittip {
     background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gittip16.png');
     -webkit-filter: grayscale(100%);
-    display: inline-block;
     height: 16px;
     width: 16px;
 }
