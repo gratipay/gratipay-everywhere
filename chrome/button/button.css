@@ -1,19 +1,10 @@
 /* GitHub */
-#gittip-button a {
-    margin-top: 0px;
-    margin-bottom: 0px;
-
-    padding: 0 10px;
-}
-
-span.mini-icon-gittip {
+.octicon-gittip {
     background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gittip16.png');
-
+    -webkit-filter: grayscale(100%);
     display: inline-block;
     height: 16px;
     width: 16px;
-
-    vertical-align: text-top;
 }
 
 /* BitBucket */
