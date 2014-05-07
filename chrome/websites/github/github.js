@@ -13,6 +13,8 @@
         var button = document.createElement('a');
 
         // Add attributes to required containers/elements
+        buttonContainer.id = 'gittip-everywhere';
+
         button.href = 'https://www.gittip.com/on/github/'+author;
         button.className += 'minibutton gittip-button';
         button.rel = 'nofollow payment';
