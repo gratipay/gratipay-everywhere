@@ -1,0 +1,22 @@
+{
+  "name": "gittip-everywhere",
+  "version": "0.0.0",
+  "description": "The official Gittip browser extension that enables Gittip giving icons on many of your favorite sites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gittip/Gittip-Everywhere.git"
+  },
+  "author": "Team Gittip",
+  "bugs": {
+    "url": "https://github.com/gittip/Gittip-Everywhere/issues"
+  },
+  "homepage": "https://www.gittip.com",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-image-embed": "^0.3.1"
+  }
+}
