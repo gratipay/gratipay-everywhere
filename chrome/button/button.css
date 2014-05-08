@@ -1,6 +1,7 @@
 /* GitHub */
 .octicon-gittip {
-    background-image: url('../icons/gittip16.png');
+    background-image: url('../icons/heart-coin.svg');
+    background-size: 16px;
     -webkit-filter: grayscale(100%);
     height: 16px;
     width: 16px;
@@ -8,7 +9,7 @@
 
 /* BitBucket */
 #repo-header .icon.gittip {
-    background-image: url('../icons/gittip16.png');
+    background-image: url('../icons/heart-coin.svg');
     -webkit-filter: grayscale(100%);
     opacity: .8;
 }
