@@ -10,6 +10,7 @@
 /* BitBucket */
 #repo-header .icon.gittip {
     background-image: url('../icons/heart-coin.svg');
+    background-size: 16px;
     -webkit-filter: grayscale(100%);
     opacity: .8;
 }
