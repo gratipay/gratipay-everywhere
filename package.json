@@ -4,6 +4,8 @@
   "description": "The official Gittip browser extension that enables Gittip giving icons on many of your favorite sites.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "node_modules/grunt-cli/bin/grunt build",
+    "build": "node_modules/grunt-cli/bin/grunt build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +19,7 @@
   "homepage": "https://www.gittip.com",
   "devDependencies": {
     "grunt": "^0.4.4",
+    "grunt-cli": "^0.1.13",
     "grunt-image-embed": "^0.3.1"
   }
 }

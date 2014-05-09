@@ -20,7 +20,6 @@ https://github.com/ironchefpython/gittip-browser-extension
 ## Requirements
 
 * NPM: Comes with Nodejs ([Installation Instructions][nodejs-install])
-* Grunt: `[sudo] npm install -g grunt-cli`
 
 ## Build
 
@@ -28,7 +27,8 @@ https://github.com/ironchefpython/gittip-browser-extension
     git clone https://github.com/gittip/Gittip-Everywhere.git
     cd Gittip-Everywhere
     npm install
-    grunt build
+    # install in chrome or hack hack hack
+    npm run-script build
 
 ## Similar Projects
 
