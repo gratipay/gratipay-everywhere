@@ -1,10 +1,10 @@
 
 var bitbucket = function() {
 
-	var author = $('.user').children('span')[1].innerText;
-	var buttonParent = $('#repo-toolbar').children('.aui-buttons')[0];
+    var author = $('.user').children('span')[1].innerText;
+    var buttonParent = $('#repo-toolbar').children('.aui-buttons')[0];
 
-	$(buttonParent).prepend('<a id="gittip-everywhere" class="aui-button aui-style" href="https://www.gittip.com/'+author+'"><span class="aui-icon icon gittip">Tip on Gittip!</span><span>Gittip</span></a>');
+    $(buttonParent).prepend('<a id="gratipay-everywhere" class="aui-button aui-style" href="https://gratipay.com/'+author+'"><span class="aui-icon icon gratipay">Tip on Gratipay!</span><span>Gratipay</span></a>');
 
 };
 

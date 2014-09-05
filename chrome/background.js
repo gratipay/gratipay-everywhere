@@ -1,23 +1,23 @@
 (function() {
-    var gittipUrl = "https://www.gittip.com/";
+    var gratipayUrl = "https://gratipay.com/";
 
-    function isGittipUrl(url) {
-        return url.indexOf(gittipUrl) != -1;
+    function isGratipayUrl(url) {
+        return url.indexOf(gratipayUrl) != -1;
     }
 
-    function goToGittip() {
+    function goToGratipay() {
         chrome.tabs.getAllInWindow(undefined, function(tabs) {
             for (var i = 0, tab; tab = tabs[i]; i++) {
-                if (tab.url && isGittipUrl(tab.url)) {
+                if (tab.url && isGratipayUrl(tab.url)) {
                     chrome.tabs.update(tab.id, {selected: true});
                     return;
                 }
             }
-            chrome.tabs.create({url: gittipUrl});
+            chrome.tabs.create({url: gratipayUrl});
         });
     }
 
     // Add listener
-    chrome.browserAction.onClicked.addListener(goToGittip);
+    chrome.browserAction.onClicked.addListener(goToGratipay);
 
 }());

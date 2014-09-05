@@ -14,11 +14,11 @@ exports.main = function() {
         // Mandatory string used to identify your widget in order to
         // save its location when the user moves it in the browser.
         // This string has to be unique and must not be changed over time.
-        id: "gittip-everywhere",
+        id: "gratipay-everywhere",
 
         // A required string description of the widget used for
         // accessibility, title bars, and error reporting.
-        label: "Gittip Everywhere",
+        label: "Gratipay Everywhere",
 
 
         // An optional string URL to content to load into the widget.
@@ -28,15 +28,15 @@ exports.main = function() {
         //
         // If the content is an image, it is automatically scaled to
         // be 16x16 pixels.
-        contentURL: "https://rawgithub.com/gittip/www.gittip.com/master/img-src/gittip-logo-16.png",
+        contentURL: "https://rawgithub.com/gratipay/gratipay.com/master/img-src/gratipay-logo-16.png",
 
         // Add a function to trigger when the Widget is clicked.
         onClick: function(event) {
-            
+
             // Tabs documentation: https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/tabs.html
 
             // Open a new tab in the currently active window.
-            tabs.open("https://www.gittip.com");
+            tabs.open("https://gratipay.com");
 
         }
     });
