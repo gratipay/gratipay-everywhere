@@ -1,6 +1,6 @@
 {
    "license":"BSD 3-Clause",
-   "description":"The official Gittip addon for your browser, we enable Gittip tipping icons on many of your favorite sites.",
+   "description":"The official Gratipay addon for your browser, we enable Gratipay tipping icons on many of your favorite sites.",
    "contributors":[
 
    ],
@@ -12,8 +12,8 @@
    ],
    "version":"initial.rev3",
    "lib":"lib",
-   "fullName":"Gittip Everywhere",
+   "fullName":"Gratipay Everywhere",
    "main":"main",
    "id":"jid0-AKiuZrZQyWxgeVB96AfNAIKcgmI",
-   "name":"gittip-everywhere"
+   "name":"gratipay-everywhere"
 }

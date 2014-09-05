@@ -13,17 +13,17 @@
         var button = document.createElement('a');
 
         // Add attributes to required containers/elements
-        buttonContainer.id = 'gittip-everywhere';
+        buttonContainer.id = 'gratipay-everywhere';
 
-        button.href = 'https://www.gittip.com/on/github/'+author;
-        button.className += 'minibutton gittip-button';
+        button.href = 'https://www.gratipay.com/on/github/'+author;
+        button.className += 'minibutton gratipay-button';
         button.rel = 'nofollow payment';
         button.target = '_blank';
-        button.innerHTML = '<span class="octicon octicon-gittip"></span>';
-        button.innerHTML += 'Gittip';
+        button.innerHTML = '<span class="octicon octicon-gratipay"></span>';
+        button.innerHTML += 'Gratipay';
 
         // Fill the data
-        buttonContainer.innerHTML = outerHTML(button); 
+        buttonContainer.innerHTML = outerHTML(button);
 
         // Insert our button!
         actions.insertBefore(buttonContainer, actions.firstChild);

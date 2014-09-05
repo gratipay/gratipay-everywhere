@@ -1,14 +1,14 @@
 /* GitHub */
-.octicon-gittip {
-    background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gittip16.png');
+.octicon-gratipay {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gratipay16.png');
     -webkit-filter: grayscale(100%);
     height: 16px;
     width: 16px;
 }
 
 /* BitBucket */
-#repo-header .icon.gittip {
-    background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gittip16.png');
+#repo-header .icon.gratipay {
+    background-image: url('chrome-extension://__MSG_@@extension_id__/icons/gratipay16.png');
     -webkit-filter: grayscale(100%);
     opacity: .8;
 }
