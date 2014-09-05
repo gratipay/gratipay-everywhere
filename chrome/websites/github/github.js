@@ -15,7 +15,7 @@
         // Add attributes to required containers/elements
         buttonContainer.id = 'gratipay-everywhere';
 
-        button.href = 'https://www.gratipay.com/on/github/'+author;
+        button.href = 'https://gratipay.com/on/github/'+author;
         button.className += 'minibutton gratipay-button';
         button.rel = 'nofollow payment';
         button.target = '_blank';

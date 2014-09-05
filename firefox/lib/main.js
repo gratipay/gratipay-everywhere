@@ -28,7 +28,7 @@ exports.main = function() {
         //
         // If the content is an image, it is automatically scaled to
         // be 16x16 pixels.
-        contentURL: "https://rawgithub.com/gratipay/www.gratipay.com/master/img-src/gratipay-logo-16.png",
+        contentURL: "https://rawgithub.com/gratipay/gratipay.com/master/img-src/gratipay-logo-16.png",
 
         // Add a function to trigger when the Widget is clicked.
         onClick: function(event) {
@@ -36,7 +36,7 @@ exports.main = function() {
             // Tabs documentation: https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/tabs.html
 
             // Open a new tab in the currently active window.
-            tabs.open("https://www.gratipay.com");
+            tabs.open("https://gratipay.com");
 
         }
     });

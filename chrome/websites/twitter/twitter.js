@@ -24,7 +24,7 @@
 
             $.ajax({
                 type: 'GET',
-                url: 'https://www.gratipay.com/on/twitter/'+username+'/public.json',
+                url: 'https://gratipay.com/on/twitter/'+username+'/public.json',
                 beforeSend:function(){
                     // this is where we append a loading image
 
