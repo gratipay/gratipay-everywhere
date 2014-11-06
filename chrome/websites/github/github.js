@@ -20,7 +20,7 @@
         button.rel = 'nofollow payment';
         button.target = '_blank';
         button.innerHTML = '<span class="octicon octicon-gratipay"></span>';
-        button.innerHTML += 'Gratipay';
+        button.innerHTML += ' Gratipay';
 
         // Fill the data
         buttonContainer.innerHTML = outerHTML(button);
