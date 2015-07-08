@@ -16,7 +16,7 @@
         buttonContainer.id = 'gratipay-everywhere';
 
         button.href = 'https://gratipay.com/on/github/'+author;
-        button.className += 'minibutton gratipay-button';
+        button.className += 'btn btn-sm';
         button.rel = 'nofollow payment';
         button.target = '_blank';
         button.innerHTML = '<span class="octicon octicon-gratipay"></span>';
