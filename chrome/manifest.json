@@ -25,7 +25,7 @@
     "content_scripts": [
         {
             "css": [ "button/button.css" ],
-            "js": [ "libs/jquery-2.0.2.min.js", "websites/github/github.js" ],
+            "js": [ "websites/github/github.js" ],
             "matches": [ "https://github.com/*" ]
         },
         {
