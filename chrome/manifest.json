@@ -14,7 +14,6 @@
         "default_icon": "icons/gratipay48.png"
     },
     "permissions": [
-        "https://github.com/*",
         "tabs",
         "webNavigation"
     ],
@@ -24,7 +23,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["*://*/*"],
+            "matches": [ "https://github.com/*", "https://twitter.com/*", "https://bitbucket.org/*" ],
             "js": ["content.js"]
         }
     ],
