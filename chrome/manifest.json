@@ -14,7 +14,6 @@
         "default_icon": "icons/gratipay48.png"
     },
     "permissions": [
-        "https://github.com/*",
         "tabs",
         "webNavigation"
     ],
@@ -24,22 +23,11 @@
     },
     "content_scripts": [
         {
-            "css": [ "button/button.css" ],
-            "js": [ "libs/jquery-2.0.2.min.js", "websites/github/github.js" ],
-            "matches": [ "https://github.com/*" ]
-        },
-        {
-            "js": [ "libs/jquery-2.0.2.min.js", "websites/twitter/twitter.js" ],
-            "matches": [ "https://twitter.com/*" ]
-        },
-        {
-            "css": [ "button/button.css" ],
-            "js": [ "libs/jquery-2.0.2.min.js", "websites/bitbucket/bitbucket.js" ],
-            "matches": [ "https://bitbucket.org/*" ]
+            "matches": [ "https://github.com/*", "https://twitter.com/*", "https://bitbucket.org/*" ],
+            "js": ["content.js"]
         }
     ],
     "web_accessible_resources": [
-        "icons/gratipay16.png",
-        "websites/twitter/widget.html"
+        "icons/gratipay16.png"
     ]
 }
